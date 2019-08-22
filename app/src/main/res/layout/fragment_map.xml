@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:mapbox="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.mapbox.mapboxsdk.maps.MapView
+        android:id="@+id/view_map"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/constraint_bottom"
+        mapbox:mapbox_cameraTargetLat="33.898891" mapbox:mapbox_cameraTargetLng="-84.276350" mapbox:mapbox_cameraZoom="16">
+
+
+    </com.mapbox.mapboxsdk.maps.MapView>
+
+    <ImageButton
+        android:id="@+id/img_btn_voice"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/ic_circle"
+        android:src="@drawable/ic_voice_on"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageButton
+        android:id="@+id/img_btn_music"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/ic_circle"
+        android:src="@drawable/ic_music_off"
+        app:layout_constraintTop_toBottomOf="@id/img_btn_voice"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/img_btn_plan"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:background="@drawable/ic_circle"
+        android:text="PLAN\nRUN"
+        app:layout_constraintBottom_toTopOf="@id/constraint_bottom"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/img_btn_play"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:background="@drawable/ic_circle"
+        android:text="QUICK\nSTART"
+        app:layout_constraintBottom_toTopOf="@id/constraint_bottom"
+        app:layout_constraintEnd_toStartOf="@id/img_btn_past"
+        app:layout_constraintStart_toEndOf="@id/img_btn_plan"/>
+
+    <TextView
+        android:id="@+id/img_btn_past"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:background="@drawable/ic_circle"
+        android:text="MY\nRUNS"
+        app:layout_constraintBottom_toTopOf="@id/constraint_bottom"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraint_bottom"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:background="#c0c0c2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view_map">
+
+        <TextView
+            android:id="@+id/tv_mile_split"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp" android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:textColor="#000000"
+            android:text="MileSplit"
+            android:textSize="20sp" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:textColor="#000000" android:text="Distance"
+            android:textSize="20sp" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tv_duration" app:layout_constraintStart_toEndOf="@+id/tv_mile_split"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.505"/>
+
+        <TextView
+            android:id="@+id/tv_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:layout_marginTop="8dp" android:layout_marginEnd="20dp"
+            android:layout_marginBottom="8dp"
+            android:text="Duration"
+            android:textSize="20sp" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

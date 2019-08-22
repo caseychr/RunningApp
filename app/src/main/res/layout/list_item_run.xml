@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#D3D3D3"
+    android:layout_margin="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/img_static_map"
+        android:layout_width="140dp"
+        android:layout_height="120dp" android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp" android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_play"/>
+
+    <TextView
+        android:id="@+id/tv_item_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="5.0 miles"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@+id/img_static_map"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:id="@+id/tv_item_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_marginStart="16dp" android:layout_marginTop="16dp"
+        android:text="40 minutes"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/img_static_map"
+        app:layout_constraintTop_toBottomOf="@+id/tv_item_distance"/>
+    <TextView
+        android:id="@+id/tv_item_mile_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="7:30" android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@+id/tv_item_duration"
+        app:layout_constraintTop_toBottomOf="@+id/tv_item_distance"/>
+    <TextView
+        android:id="@+id/tv_use"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="USE"
+        android:textSize="24sp" app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <TextView
+        android:id="@+id/tv_item_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" android:layout_marginBottom="16dp"
+        android:textSize="14sp"
+        android:text="Sat 3/13/19 07:00" app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tv_use" app:layout_constraintStart_toEndOf="@+id/img_static_map"/>
+
+    <ImageView
+        android:id="@+id/top_border"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/top_border"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <ImageView
+        android:id="@+id/bottom_border"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bottom_border"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"/>
+
+    <ImageView
+        android:id="@+id/left_border"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:src="@drawable/left_border"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/right_border"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:src="@drawable/right_border"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+</android.support.constraint.ConstraintLayout>

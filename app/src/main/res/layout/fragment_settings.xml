@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_marginTop="40dp"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+
+    <Switch
+        android:id="@+id/switch_voiceover_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:text="Voiceover On - Overall"/>
+
+    <Switch
+        android:id="@+id/switch_music"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="20sp"
+        android:text="Music On"/>
+
+    <Switch
+        android:id="@+id/switch_voiceover_current_run"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:text="Voiceover On - Current Run"/>
+
+    <Button
+        android:id="@+id/btn_metrics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:text="Imperial"
+        android:textAllCaps="false"/>
+
+    <TextView
+        android:id="@+id/tv_api_calls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:text="6 API calls"/>
+
+</LinearLayout>

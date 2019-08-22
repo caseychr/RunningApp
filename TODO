@@ -1,0 +1,32 @@
+
+
+1) Mapbox Map
+    a) Animate map
+    b) Draw route during movement
+    c) Save route after finishing
+    d) Start, Pause and Stop exercise
+    e) Plan a run -> API for planning a run
+2) Timer
+    - Overall time of run
+    - Mile splits
+3) Database
+    - Save date and times of runs
+    - Save route and static image
+    - Save overall time running
+    - Save over mileage
+
+User should have 4 options for running:
+1) Plan a run - round trip or not?
+2) Quickstart run
+3) Run for a distance
+4) Run for a duration
+5) Pick from a previous run - Measure current run against old run
+
+Choose music during run
+
+My Runs - Save a list of every run completed
+My Achievements - Longest timed run, Furthest run, best mile split, best run (by mile split),
+ overall times and mileage, and mile split
+Settings - Toggle voiceover, music, current run info voiceover, metric/imperial, see Mapbox API calls (secret menu)
+
+Can Register Firebase to track API calls per user

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Running App</string>
+    <string name="mapbox_api_key">pk.eyJ1IjoiY2Nhc2V5IiwiYSI6ImNqeHh6ZHZ4ZTA0eWczbXQzeWNxdzU4bDAifQ.sb87NvPt9Tbzainr0uHGdw</string>
+</resources>
